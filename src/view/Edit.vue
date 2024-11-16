@@ -2,10 +2,10 @@
   <div>
     <h2>Edit Contact</h2>
     <form @submit.prevent="updateContact">
-      <input v-model="firstName" placeholder="First Name" required />
-      <input v-model="lastName" placeholder="Last Name" required />
-      <input v-model="email" placeholder="Email" type="email" required />
-      <input v-model="phone" placeholder="Phone" />
+      <input v-model="FirstName" placeholder="First Name" required />
+      <input v-model="LastName" placeholder="Last Name" required />
+      <input v-model="Email" placeholder="Email" type="email" required />
+      <input v-model="Phone" placeholder="Phone" />
       <button type="submit">Update Contact</button>
     </form>
   </div>
@@ -24,7 +24,7 @@ export default {
       const contacts = JSON.parse(localStorage.getItem('contacts')) || [];
       const index = contacts.findIndex(c => c.id === this.$route.params.id);
       if (index !== -1) {
-        contacts[index] = { ...contacts[index], firstName: this.firstName, lastName: this.lastName, email: this.email, phone: this.phone };
+        contacts[index] = { ...contacts[index], FirstName: this.FirstName, LastName: this.LastName, Email: this.Email, Phone: this.Phone };
         localStorage.setItem('contacts', JSON.stringify(contacts));
         this.$router.push(`/contact/${this.$route.params.id}`);
       }
