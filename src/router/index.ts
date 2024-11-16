@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import AddContact from '../views/AddContact.vue';
-import ContactDetails from '../views/ContactDetails.vue';
-import ContactList from '../views/ContactList.vue';
-import EditContact from '../views/EditContact.vue';
+import AddContact from '../views/Add.vue';
+import ContactDetails from '../views/Details.vue';
+import ContactList from '../views/List.vue';
+import EditContact from '../views/Edit.vue';
 
 const routes = [
   { path: '/', component: ContactList },
