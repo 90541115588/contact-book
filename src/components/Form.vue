@@ -1,21 +1,21 @@
 <template>
   <form @submit.prevent="handleSubmit">
     <div>
-      <label for="firstName">First Name:</label>
+      <label for="FirstName">First Name:</label>
       <input
-        id="firstName"
-        v-model="contact.firstName"
+        id="FirstName"
+        v-model="contact.FirstName"
         type="text"
-        placeholder="Enter first name"
+        placeholder="Enter First name"
         required
       />
     </div>
 
     <div>
-      <label for="lastName">Last Name:</label>
+      <label for="LastName">Last Name:</label>
       <input
-        id="lastName"
-        v-model="contact.lastName"
+        id="LastName"
+        v-model="contact.LastName"
         type="text"
         placeholder="Enter last name"
         required
@@ -23,23 +23,23 @@
     </div>
 
     <div>
-      <label for="email">Email:</label>
+      <label for="Email">Email:</label>
       <input
-        id="email"
-        v-model="contact.email"
-        type="email"
-        placeholder="Enter email"
+        id="Email"
+        v-model="contact.Email"
+        type="Email"
+        placeholder="Enter Email"
         required
       />
     </div>
 
     <div>
-      <label for="phone">Phone Number:</label>
+      <label for="Phone">Phone Number:</label>
       <input
-        id="phone"
-        v-model="contact.phone"
+        id="Phone"
+        v-model="contact.Phone"
         type="tel"
-        placeholder="Enter phone number"
+        placeholder="Enter Phone number"
       />
     </div>
 
@@ -52,7 +52,7 @@
       ></textarea>
     </div>
 
-    <button type="submit">{{ isEditing ? "Update Contact" : "Add Contact" }}</button>
+    <button type="Submit">{{ isEditing ? "Update Contact" : "Add Contact" }}</button>
     <button type="button" @click="cancel">Cancel</button>
   </form>
 </template>
