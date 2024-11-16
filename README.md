@@ -13,5 +13,9 @@ A single-page Contact Book web application built with **Vue 3**, **Vue Router 4*
 7. Data persistence via local storage.
 8. Responsive and user-friendly UI.
 
+- Name: Manpreet Singh
+- Student Number: 90541115588
+
+
 
 
