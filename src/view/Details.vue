@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h2>{{ contact.firstName }} {{ contact.lastName }}</h2>
-    <p>Email: {{ contact.email }}</p>
-    <p>Phone: {{ contact.phone }}</p>
+    <h2>{{ contact.FirstName }} {{ contact.LastName }}</h2>
+    <p>Email: {{ contact.Email }}</p>
+    <p>Phone: {{ contact.Phone }}</p>
     <router-link :to="`/edit/${contact.id}`">Edit</router-link>
     <button @click="deleteContact">Delete</button>
   </div>
